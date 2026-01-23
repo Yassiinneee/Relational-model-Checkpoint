@@ -1,0 +1,47 @@
+1-Entities and Their Attributes
+
+   Hotel:
+   Attributes: Hotel_Id (Primary Key), Hotel_name
+
+   Type:
+   Attributes: Type_Id (Primary Key), Type_Name
+
+   Room:
+   Attributes: Room_Id (Primary Key), Floor
+
+   Category:
+   Attributes: Category_Id (Primary Key), Category_Name, Price, Beds_numbers
+
+   Employee:
+   Attributes: Employee_Id (Primary Key), Employee_Name, Employee_Speciality
+
+2- Entities involved :
+
+   Relationship Name:  is 
+   Hotel (1,1) → Type (1,N)
+   Each hotel has one type
+   One type can have many hotels
+   
+   Relationship Name: is composed 
+   Hotel (1,N) → Room (1,1)
+   One hotel has many rooms
+   One room belongs to one hotel
+
+   Relationship Name: is of 
+   Room (1,1) → Category (1,N)
+   Each room has one category
+   One category describes many rooms
+
+   Relationship Name: Works 
+   Hotel (1,N) → Employee (1,1)
+   One hotel has many employees
+   One employee works in one hotel
+
+   Relationship Name :  leads 
+   1:N / 1:1  recursive relationship                               # Self-relationship
+   One employee (manager) leads many employees
+   Each employee is led by one manager
+
+
+
+
